@@ -34,6 +34,14 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     color: white;
+    height:900px;
 }
+
+#root #main .image img{
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
 

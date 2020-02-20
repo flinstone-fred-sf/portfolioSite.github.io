@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import LandingPage from './LandingPage';
+import LandingPage from './components/LandingPage';
 
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.getElementById("root");

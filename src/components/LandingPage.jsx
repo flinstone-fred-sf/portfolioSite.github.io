@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from './images/Nandeeswari_Kuppusamy.jpg';
+import pic from './../../images/Nandeeswari_Kuppusamy.jpg';
 
 
 class LandingPage extends React.Component{
@@ -8,11 +8,11 @@ class LandingPage extends React.Component{
         return (
           <div id="main">
             <div id='intro'>
-              <h1>Hi I'm Nandhu</h1>
-              <h3>Here is my Portfolio!</h3>
+              <h1>Hi, I'm Nandhu</h1>
+              <h4>Here is my Portfolio!</h4>
             </div>
             <span className="image">
-              <img src={pic} alt="" width='450' height='450'/>
+              <img src={pic} alt="" width='350' height='350'/>
             </span>
           </div>
         );
