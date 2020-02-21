@@ -17,18 +17,22 @@ module.exports = {
             presets: ["@babel/env", "@babel/react"]
           }
         }
-          },
-          {
-              test: /\.(png|jpg|gif)$/i,
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader"]
+      },
+      {
+        test: /\.(png|jpg|gif)$/i,
         use: [
           {
-            loader: 'url-loader',
+            loader: "url-loader",
             options: {
               limit: 8192
             }
           }
         ]
-        }
+      }
     ]
   },
   devtool: "source-map",
