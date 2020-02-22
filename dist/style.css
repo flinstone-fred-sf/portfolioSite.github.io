@@ -59,22 +59,27 @@ a {
   justify-content: center;
 }
 
-@media (min-width: 1560px){ 
+@media (min-width: 960px){
 .carousel .control-dots{
-  bottom: 70px;
+  bottom: 0;
 }
 }
+.carousel .control-dots{
+    position: fixed;
+    bottom:0;
+}
+
 
 .carousel .slide img{
       width: 50%;
 }
 
 .carousel {
-    position: fixed;
-    top:100px;
-    /* bottom: 40px; */
+    position: relative;
+    /* top:100px; */
+    bottom: 30px;
     width: 100%;
-    height: 700%;
+    height: 90%;
     margin:auto;
 }
 
@@ -90,7 +95,7 @@ a {
 .carousel .slide.selected #slide3 #desc{
     display: flex;
     flex-direction: column;
-    width:310px;
+    width:300px;
 }
 
 .carousel .slide.selected #slide1 #desc #details,
