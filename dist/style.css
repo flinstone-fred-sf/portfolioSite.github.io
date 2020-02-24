@@ -65,7 +65,8 @@ a {
   }
 }
 .carousel .control-dots {
-  position: relative;
+  position: fixed;
+  left:-10px;
   bottom: 0;
 }
 
