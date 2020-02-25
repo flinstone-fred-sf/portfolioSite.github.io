@@ -67,11 +67,25 @@ a {
 .carousel .control-dots {
   position: fixed;
   left:-10px;
-  bottom: 0;
+  bottom: 70px;
+}
+
+#footer{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* position: fixed;
+    bottom:0;  */
+    /* left:45%; */
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 auto;
+    flex-shrink: 0;
 }
 
 .carousel .slide img {
   width: 50%;
+  height:80%;
 }
 
 .carousel {
