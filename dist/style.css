@@ -74,13 +74,26 @@ a {
     color: white;
     display: flex;
     flex-direction: row;
-    /* position: fixed;
-    bottom:0;  */
-    /* left:45%; */
-    justify-content: center;
+   
+    /* justify-content: center;
     align-items: center;
     flex: 1 0 auto;
-    flex-shrink: 0;
+    flex-shrink: 0; */
+    width: 100%;
+    background-color: rgba(220, 200, 200, 0.2);
+}
+
+#footer p{
+     position: fixed;
+    bottom:0; 
+    left:46%;
+    right:46%;
+}
+
+@media (max-width: 630px) {
+  #footer {
+    display: none;
+  }
 }
 
 .carousel .slide img {
