@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import GetAns from "./GetAnswers";
 
 import { Carousel } from "react-responsive-carousel";
 import pic from "./../../images/Nandeeswari_Kuppusamy.jpg";
@@ -31,27 +32,8 @@ export default class CarouselComponent extends Component {
             <span>Please browse around my website to view my portfolio</span>
           </div>
         </div>
-        <div id="slide1">
-          <div id="desc">
-            <h1>GetAnswers</h1>
-            <p>
-              A web app inspired by Stack Overflow, where professionals can ask
-              questions with tags and post answers in rich text format and
-              search questions based on title and tags.
-            </p>
-            <br />
-            <div id="details">
-              <a href="https://get-ans.herokuapp.com/#/" target="_blank">
-                Live
-              </a>
-              <br />
-              <a href="https://github.com/knandhu/GetAnswers" target="_blank">
-                GitHub
-              </a>
-            </div>
-          </div>
-          <br />
-          <img src={getans} />
+        <div>
+          <GetAns />
         </div>
         <div id="slide2">
           <div id="desc">

@@ -86,8 +86,8 @@ a {
 #footer p{
      position: fixed;
     bottom:0; 
-    left:46%;
-    right:46%;
+    left:45%;
+    right:45%;
 }
 
 @media (max-width: 630px) {
