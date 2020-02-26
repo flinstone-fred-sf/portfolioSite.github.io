@@ -29,6 +29,7 @@ a {
 }
 
 #nav-bar #name {
+  font-size: 28px;
   margin-left: 20px;
   z-index: 1;
 }

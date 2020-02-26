@@ -27,9 +27,13 @@ export default class CarouselComponent extends Component {
             <img src={pic} alt="" width="150" height="150" />
           </span>
           <div id="intro">
-            <h1>A Brief Introduction</h1>
-            <h4>Hi, I'm Nandhu</h4>
-            <span>Please browse around my website to view my portfolio</span>
+            <h1>Nandeeswari Kuppusamy</h1>
+            <span>
+              I am a passionate software developer, I enjoy learning new
+              technologies and skills to build seamless bug-free web
+              applications. I have experience building dynamic web applications
+              in JavaScript, Ruby on Rails, React/Redux and HTML/CSS.
+            </span>
           </div>
         </div>
         <div>
