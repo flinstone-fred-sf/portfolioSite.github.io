@@ -8,13 +8,14 @@ class LandingPage extends React.Component{
     render() {
         return (
           <div id="main">
-            {/* <div id='intro'>
-              <h1>Hi, I'm Nandhu</h1>
-              <h4>Here is my Portfolio!</h4>
+            <div class="dropdown">
+              <button class="dropbtn">Projects</button>
+              <div class="dropdown-content">
+                <a href="#">GetAnswers</a>
+                <a href="#">Ingredish</a>
+                <a href="#">RockNRoll</a>
+              </div>
             </div>
-            <span className="image">
-              <img src={pic} alt="" width='350' height='350'/>
-            </span> */}
             <CarouselComponent />
           </div>
         );
