@@ -25,7 +25,7 @@ export default class GetAns extends React.Component{
      </div>
    </div>
    <br />
-   <img src={getans} />
+            <img src={getans}/>
  </div>
         )
     }

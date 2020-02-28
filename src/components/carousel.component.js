@@ -61,7 +61,7 @@ export default class CarouselComponent extends Component {
               </a>
             </div>
           </div>
-          <img src={ingredish} />
+          <img src={ingredish}/>
         </div>
         <div id="slide3">
           <div id="desc">
