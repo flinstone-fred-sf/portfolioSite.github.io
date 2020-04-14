@@ -143,11 +143,10 @@ a {
     bottom: 0;
   }
 }
-/* .carousel .control-dots {
+.carousel .control-dots {
   position: fixed;
   left:-10px;
-  bottom: 70px;
-} */
+}
 /* 
 #footer{
     color: white;
@@ -176,9 +175,14 @@ a {
   }
 }
 
+/* #slide2 img{
+  width:60%;
+} */
 .carousel .slide img {
   width: 50%;
   height: 80%;
+  /* width: 300px;
+  height: 300px; */
   vertical-align: none;
 }
 

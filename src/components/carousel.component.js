@@ -39,8 +39,7 @@ export default class CarouselComponent extends Component {
             </p>
           </div>
           <div id="footer">
-            
-            <i className="fab fa-react" width='95' height='95'/>
+            <i className="fab fa-react" width="95" height="95" />
             <i className="fab fa-node"></i>
             <i className="fab fa-js"></i>
             <i className="fab fa-html5"></i>
