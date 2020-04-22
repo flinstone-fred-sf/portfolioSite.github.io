@@ -12,14 +12,18 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import RockNRoll from "./RockNRoll";
 
 export default class CarouselComponent extends Component {
+
+  onChange() {
+    
+  }
   render() {
     return (
       <Carousel
         showThumbs={false}
         useKeyboardArrows
         showStatus={false}
-        transitionTime={800}
-        centerMode={true}
+        transitionTime={200}
+        verticalSwipe={"standard"}
         centerSlidePercentage={100}
       >
         <div id="home">
@@ -39,14 +43,16 @@ export default class CarouselComponent extends Component {
             </p>
           </div>
           <div id="footer">
-            <i className="fab fa-react" width="95" height="95" />
-            <i className="fab fa-node"></i>
-            <i className="fab fa-js"></i>
-            <i className="fab fa-html5"></i>
+            <div>Skills: Node.js, React/Redux, Ruby/Rails, Javascript, jQuery, PostgreSQL, HTML, CSS </div>
           </div>
         </div>
         <div>
           <GetAns />
+          {/* <div><i className="fab fa-react" width="95" height="95" />
+            <i className="fab fa-node"></i>
+            <i className="fab fa-js"></i>
+              <i className="fab fa-html5"></i>
+          </div> */}
         </div>
         <div id="slide2">
           <div id="desc">
