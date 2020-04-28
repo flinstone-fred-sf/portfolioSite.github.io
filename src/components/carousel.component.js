@@ -4,7 +4,7 @@ import GetAns from "./GetAnswers";
 
 import { Carousel } from "react-responsive-carousel";
 import pic from "./../../images/Nandeeswari_Kuppusamy.jpg";
-import getans from "./../../images/answer.gif";
+// import getans from "./../../images/answer.gif";
 // import ingredish from "./../../images/ingredishSearch.gif";
 import ingredish from "./../../images/ingSplash.png";
 // import game from "./../../images/gamePlay.gif";
@@ -15,9 +15,6 @@ import RockNRoll from "./RockNRoll";
 
 export default class CarouselComponent extends Component {
 
-  onChange() {
-    
-  }
   render() {
     return (
       <Carousel

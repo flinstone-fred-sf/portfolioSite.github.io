@@ -112,19 +112,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./images/answer.gif":
-/*!***************************!*\
-  !*** ./images/answer.gif ***!
-  \***************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "23ecf74b0b8c175682b65604b581c1a0.gif");
-
-/***/ }),
-
 /***/ "./images/ingSplash.png":
 /*!******************************!*\
   !*** ./images/ingSplash.png ***!
@@ -35369,12 +35356,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _GetAnswers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GetAnswers */ "./src/components/GetAnswers.jsx");
 /* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-responsive-carousel */ "./node_modules/react-responsive-carousel/lib/es/index.js");
 /* harmony import */ var _images_Nandeeswari_Kuppusamy_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../images/Nandeeswari_Kuppusamy.jpg */ "./images/Nandeeswari_Kuppusamy.jpg");
-/* harmony import */ var _images_answer_gif__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../images/answer.gif */ "./images/answer.gif");
-/* harmony import */ var _images_ingSplash_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../images/ingSplash.png */ "./images/ingSplash.png");
-/* harmony import */ var _images_GameSplash_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../images/GameSplash.png */ "./images/GameSplash.png");
-/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-responsive-carousel/lib/styles/carousel.min.css */ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css");
-/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _RockNRoll__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./RockNRoll */ "./src/components/RockNRoll.jsx");
+/* harmony import */ var _images_ingSplash_png__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../images/ingSplash.png */ "./images/ingSplash.png");
+/* harmony import */ var _images_GameSplash_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../images/GameSplash.png */ "./images/GameSplash.png");
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-responsive-carousel/lib/styles/carousel.min.css */ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css");
+/* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _RockNRoll__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./RockNRoll */ "./src/components/RockNRoll.jsx");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35401,8 +35387,8 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
-
- // import ingredish from "./../../images/ingredishSearch.gif";
+ // import getans from "./../../images/answer.gif";
+// import ingredish from "./../../images/ingredishSearch.gif";
 
  // import game from "./../../images/gamePlay.gif";
 
@@ -35422,9 +35408,6 @@ var CarouselComponent = /*#__PURE__*/function (_Component) {
   }
 
   _createClass(CarouselComponent, [{
-    key: "onChange",
-    value: function onChange() {}
-  }, {
     key: "render",
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_responsive_carousel__WEBPACK_IMPORTED_MODULE_3__["Carousel"], {
@@ -35452,7 +35435,7 @@ var CarouselComponent = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "example"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_ingSplash_png__WEBPACK_IMPORTED_MODULE_6__["default"]
+        src: _images_ingSplash_png__WEBPACK_IMPORTED_MODULE_5__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -35472,7 +35455,7 @@ var CarouselComponent = /*#__PURE__*/function (_Component) {
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "example"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_GameSplash_png__WEBPACK_IMPORTED_MODULE_7__["default"]
+        src: _images_GameSplash_png__WEBPACK_IMPORTED_MODULE_6__["default"]
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "content"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
