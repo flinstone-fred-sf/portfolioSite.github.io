@@ -171,7 +171,7 @@ a {
 }
 .carousel .control-dots {
   position: fixed;
-  left: -15px;
+  left: -18px;
 }
 
 @media (max-width: 630px) {
