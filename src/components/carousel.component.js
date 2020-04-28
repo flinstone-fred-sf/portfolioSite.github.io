@@ -5,8 +5,10 @@ import GetAns from "./GetAnswers";
 import { Carousel } from "react-responsive-carousel";
 import pic from "./../../images/Nandeeswari_Kuppusamy.jpg";
 import getans from "./../../images/answer.gif";
-import ingredish from "./../../images/ingredishSearch.gif";
-import game from "./../../images/gamePlay.gif";
+// import ingredish from "./../../images/ingredishSearch.gif";
+import ingredish from "./../../images/ingSplash.png";
+// import game from "./../../images/gamePlay.gif";
+import game from "./../../images/GameSplash.png";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import RockNRoll from "./RockNRoll";
@@ -22,7 +24,7 @@ export default class CarouselComponent extends Component {
         showThumbs={false}
         useKeyboardArrows
         showStatus={false}
-        transitionTime={200}
+        transitionTime={400}
         verticalSwipe={"standard"}
         centerSlidePercentage={100}
       >
@@ -38,13 +40,12 @@ export default class CarouselComponent extends Component {
             <p className="aboutme">
               I am a passionate software developer, I enjoy learning new
               technologies and skills to build seamless bug-free web
-              applications. I have experience building dynamic web applications
-              in JavaScript, Ruby on Rails, React/Redux and HTML/CSS.
+              applications.
             </p>
           </div>
-          <div id="footer">
+          {/* <div id="footer">
             <div>Skills: Node.js, React/Redux, Ruby/Rails, Javascript, jQuery, PostgreSQL, HTML, CSS </div>
-          </div>
+          </div> */}
         </div>
         <div>
           <GetAns />
@@ -56,47 +57,70 @@ export default class CarouselComponent extends Component {
         </div>
         <div id="slide2">
           <div id="desc">
-            <h1>Ingredish</h1>
+            {/* <h1>Ingredish</h1>
             <p>
               A web app to search food recipes based on the user entered
               ingredients, implemented search feature with exact match of
               ingredients provided by the user.
             </p>
             <br />
-            <div id="details">
-              <a href="https://ingredish.herokuapp.com/#/" target="_blank">
-                Live
-              </a>
-              <br />
-              <a
-                href="https://github.com/BenjaminHuh/ingredish"
-                target="_blank"
-              >
-                GitHub
-              </a>
+           
+          </div> */}
+
+            <div className="example">
+              <img src={ingredish} />
+
+              <div className="content">
+                <div className="text">
+                  <h4>INGREDISH</h4>
+                  <p>A WEB APPLICATION TO SEARCH FOOD RECIPES</p>
+                  <br />
+                  <div id="details">
+                    <a
+                      href="https://ingredish.herokuapp.com/#/"
+                      target="_blank"
+                    >
+                      Live
+                    </a>
+                    <br />
+                    <a
+                      href="https://github.com/BenjaminHuh/ingredish"
+                      target="_blank"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <img src={ingredish} />
         </div>
         <div id="slide3">
           <div id="desc">
-            <h1>RockNRoll</h1>
-            <p>
-              A 3D animation game which interests users with an endless runner
-              concept.
-            </p>
-            <br />
-            <div id="details">
-              <a href="https://knandhu.github.io/dist/" target="_blank">
-                Live
-              </a>
-              <br />
-              <a href="https://github.com/knandhu/Rock-N-Roll" target="_blank">
-                GitHub
-              </a>
+            <div className="example">
+              <img src={game} />
+
+              <div className="content">
+                <div className="text">
+                  <h4>ROCK-N-ROLL</h4>
+                  <p>A 3D ANIMATION GAME</p>
+                  <br />
+                  <div id="details">
+                    <a href="https://knandhu.github.io/dist/" target="_blank">
+                      Live
+                    </a>
+                    <br />
+                    <a
+                      href="https://github.com/knandhu/Rock-N-Roll"
+                      target="_blank"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <img src={game} />
         </div>
       </Carousel>
     );

@@ -6,14 +6,17 @@ export default class RockNRoll extends React.Component{
     render() {
         return (
              <div id="slide3">
-              <div id="desc">
-                <h1>RockNRoll</h1>
-                <p>
-                  A 3D animation game which interests users with an endless
-                  runner concept.
-                </p>
-                <br />
-                <div id="details">
+            <div id="desc">
+              
+              <div className="example">
+             <img src={game} />
+
+              <div className="content">
+                <div className="text">
+                  <h4>ROCK-N-ROLL</h4>
+                  <p>A 3D ANIMATION GAME</p>
+                  <br />
+                    <div id="details">
                   <a href="https://knandhu.github.io/dist/" target="_blank">
                     Live
                   </a>
@@ -25,9 +28,13 @@ export default class RockNRoll extends React.Component{
                     GitHub
                   </a>
                 </div>
-              </div>
-              <img src={game} />
+                </div>
+                </div>
+
+                 </div>
             </div>
+            </div>
+             
         )
     }
 

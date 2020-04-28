@@ -15,6 +15,20 @@ class LandingPage extends React.Component{
                 component={GetAns}/>
             </Switch> */}
             <CarouselComponent />
+            <div id="footer">
+              {/* <div>Skills: Node.js, React/Redux, Ruby/Rails, Javascript, jQuery, PostgreSQL, HTML, CSS </div> */}
+              {/* <p>SKILLS: </p> */}
+              <p>Javascript</p>
+              <p>Ruby/Rails</p>
+              <p>Node.js</p>
+              <p>MongoDB</p>
+              <p>PostgreSQL</p>
+              <p>jquery</p>
+              <p>HTML</p>
+              <p>CSS</p>
+              <p>React</p>
+              <p>Redux</p>
+          </div> 
           </div>
         );
     }

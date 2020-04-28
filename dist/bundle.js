@@ -86,6 +86,19 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./images/GameSplash.png":
+/*!*******************************!*\
+  !*** ./images/GameSplash.png ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "cc88cc613f02ba0269295d088c437200.png");
+
+/***/ }),
+
 /***/ "./images/Nandeeswari_Kuppusamy.jpg":
 /*!******************************************!*\
   !*** ./images/Nandeeswari_Kuppusamy.jpg ***!
@@ -112,29 +125,29 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./images/gamePlay.gif":
-/*!*****************************!*\
-  !*** ./images/gamePlay.gif ***!
-  \*****************************/
+/***/ "./images/ingSplash.png":
+/*!******************************!*\
+  !*** ./images/ingSplash.png ***!
+  \******************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "2f36fef5357c993981099e93890456c3.gif");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "466dfaa8037f1d6335a0170a6f172753.png");
 
 /***/ }),
 
-/***/ "./images/ingredishSearch.gif":
-/*!************************************!*\
-  !*** ./images/ingredishSearch.gif ***!
-  \************************************/
+/***/ "./images/splash.png":
+/*!***************************!*\
+  !*** ./images/splash.png ***!
+  \***************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "c442d17e1cd9b32a46026af17f3c5be9.gif");
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "3e1d4f2ae29f9793081ea6e6671a07e6.png");
 
 /***/ }),
 
@@ -1495,20 +1508,6 @@ module.exports = hoistNonReactStatics;
 
 /***/ }),
 
-/***/ "./node_modules/isarray/index.js":
-/*!***************************************!*\
-  !*** ./node_modules/isarray/index.js ***!
-  \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = Array.isArray || function (arr) {
-  return Object.prototype.toString.call(arr) == '[object Array]';
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/mini-create-react-context/dist/esm/index.js":
 /*!******************************************************************!*\
   !*** ./node_modules/mini-create-react-context/dist/esm/index.js ***!
@@ -1815,7 +1814,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var isarray = __webpack_require__(/*! isarray */ "./node_modules/isarray/index.js")
+var isarray = __webpack_require__(/*! isarray */ "./node_modules/path-to-regexp/node_modules/isarray/index.js")
 
 /**
  * Expose `pathToRegexp`.
@@ -2241,6 +2240,20 @@ function pathToRegexp (path, keys, options) {
 
   return stringToRegexp(/** @type {string} */ (path), /** @type {!Array} */ (keys), options)
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/path-to-regexp/node_modules/isarray/index.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/path-to-regexp/node_modules/isarray/index.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = Array.isArray || function (arr) {
+  return Object.prototype.toString.call(arr) == '[object Array]';
+};
 
 
 /***/ }),
@@ -30201,11 +30214,9 @@ options.singleton = false;
 
 var update = api(content, options);
 
-var exported = content.locals ? content.locals : {};
 
 
-
-module.exports = exported;
+module.exports = content.locals || {};
 
 /***/ }),
 
@@ -35103,7 +35114,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return GetAns; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _images_answer_gif__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../images/answer.gif */ "./images/answer.gif");
+/* harmony import */ var _images_splash_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./../../images/splash.png */ "./images/splash.png");
 function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -35126,6 +35137,7 @@ function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Re
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+ // import getans from "./../../images/answer.gif";
 
 
 
@@ -35142,12 +35154,30 @@ var GetAns = /*#__PURE__*/function (_React$Component) {
 
   _createClass(GetAns, [{
     key: "render",
+    // constructor() {
+    //   this.state.visible = false;
+    //   this.getAnsHover = this.getAnsHover.bind(this);
+    // }
+    // getAnsHover() {
+    //   console.log("here");
+    //   this.setState({
+    //     visible: true
+    //   })
+    // }
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "slide1"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "desc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "GetAnswers"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A web app inspired by Stack Overflow, where professionals can ask questions with tags and post answers in rich text format and search questions based on title and tags."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "example"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_splash_png__WEBPACK_IMPORTED_MODULE_1__["default"]
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "GETANSWERS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A CLONE OF STACK OVERFLOW"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://get-ans.herokuapp.com/#/",
@@ -35155,9 +35185,7 @@ var GetAns = /*#__PURE__*/function (_React$Component) {
       }, "Live"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://github.com/knandhu/GetAnswers",
         target: "_blank"
-      }, "GitHub"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_answer_gif__WEBPACK_IMPORTED_MODULE_1__["default"]
-      }));
+      }, "GitHub"))))));
     }
   }]);
 
@@ -35227,7 +35255,9 @@ var LandingPage = /*#__PURE__*/function (_React$Component) {
     value: function render() {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "main"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_carousel_component__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_carousel_component__WEBPACK_IMPORTED_MODULE_3__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        id: "footer"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Javascript"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Ruby/Rails"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Node.js"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "MongoDB"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "PostgreSQL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "jquery"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "HTML"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "CSS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "React"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Redux")));
     }
   }]);
 
@@ -35295,7 +35325,15 @@ var RockNRoll = /*#__PURE__*/function (_React$Component) {
         id: "slide3"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "desc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "RockNRoll"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A 3D animation game which interests users with an endless runner concept."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "example"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: game
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "ROCK-N-ROLL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A 3D ANIMATION GAME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://knandhu.github.io/dist/",
@@ -35303,9 +35341,7 @@ var RockNRoll = /*#__PURE__*/function (_React$Component) {
       }, "Live"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://github.com/knandhu/Rock-N-Roll",
         target: "_blank"
-      }, "GitHub"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: game
-      }));
+      }, "GitHub")))))));
     }
   }]);
 
@@ -35334,8 +35370,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_responsive_carousel__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-responsive-carousel */ "./node_modules/react-responsive-carousel/lib/es/index.js");
 /* harmony import */ var _images_Nandeeswari_Kuppusamy_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./../../images/Nandeeswari_Kuppusamy.jpg */ "./images/Nandeeswari_Kuppusamy.jpg");
 /* harmony import */ var _images_answer_gif__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./../../images/answer.gif */ "./images/answer.gif");
-/* harmony import */ var _images_ingredishSearch_gif__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../images/ingredishSearch.gif */ "./images/ingredishSearch.gif");
-/* harmony import */ var _images_gamePlay_gif__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../images/gamePlay.gif */ "./images/gamePlay.gif");
+/* harmony import */ var _images_ingSplash_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./../../images/ingSplash.png */ "./images/ingSplash.png");
+/* harmony import */ var _images_GameSplash_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./../../images/GameSplash.png */ "./images/GameSplash.png");
 /* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-responsive-carousel/lib/styles/carousel.min.css */ "./node_modules/react-responsive-carousel/lib/styles/carousel.min.css");
 /* harmony import */ var react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_responsive_carousel_lib_styles_carousel_min_css__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _RockNRoll__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./RockNRoll */ "./src/components/RockNRoll.jsx");
@@ -35366,7 +35402,9 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 
 
+ // import ingredish from "./../../images/ingredishSearch.gif";
 
+ // import game from "./../../images/gamePlay.gif";
 
 
 
@@ -35393,7 +35431,7 @@ var CarouselComponent = /*#__PURE__*/function (_Component) {
         showThumbs: false,
         useKeyboardArrows: true,
         showStatus: false,
-        transitionTime: 300,
+        transitionTime: 400,
         verticalSwipe: "standard",
         centerSlidePercentage: 100
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -35407,13 +35445,19 @@ var CarouselComponent = /*#__PURE__*/function (_Component) {
         id: "intro"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Nandeeswari Kuppusamy")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
         className: "aboutme"
-      }, "I am a passionate software developer, I enjoy learning new technologies and skills to build seamless bug-free web applications. I have experience building dynamic web applications in JavaScript, Ruby on Rails, React/Redux and HTML/CSS.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-        id: "footer"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Skills: Node.js, React/Redux, Ruby/Rails, Javascript, jQuery, PostgreSQL, HTML, CSS "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GetAnswers__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "I am a passionate software developer, I enjoy learning new technologies and skills to build seamless bug-free web applications."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GetAnswers__WEBPACK_IMPORTED_MODULE_2__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "slide2"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "desc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Ingredish"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A web app to search food recipes based on the user entered ingredients, implemented search feature with exact match of ingredients provided by the user."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "example"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_ingSplash_png__WEBPACK_IMPORTED_MODULE_6__["default"]
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "INGREDISH"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A WEB APPLICATION TO SEARCH FOOD RECIPES"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://ingredish.herokuapp.com/#/",
@@ -35421,13 +35465,19 @@ var CarouselComponent = /*#__PURE__*/function (_Component) {
       }, "Live"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://github.com/BenjaminHuh/ingredish",
         target: "_blank"
-      }, "GitHub"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_ingredishSearch_gif__WEBPACK_IMPORTED_MODULE_6__["default"]
-      })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, "GitHub"))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "slide3"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "desc"
-      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "RockNRoll"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A 3D animation game which interests users with an endless runner concept."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "example"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+        src: _images_GameSplash_png__WEBPACK_IMPORTED_MODULE_7__["default"]
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "content"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+        className: "text"
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h4", null, "ROCK-N-ROLL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "A 3D ANIMATION GAME"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         id: "details"
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://knandhu.github.io/dist/",
@@ -35435,9 +35485,7 @@ var CarouselComponent = /*#__PURE__*/function (_Component) {
       }, "Live"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://github.com/knandhu/Rock-N-Roll",
         target: "_blank"
-      }, "GitHub"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
-        src: _images_gamePlay_gif__WEBPACK_IMPORTED_MODULE_7__["default"]
-      })));
+      }, "GitHub"))))))));
     }
   }]);
 
