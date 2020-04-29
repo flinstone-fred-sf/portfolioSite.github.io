@@ -35,7 +35,7 @@ export default class CarouselComponent extends Component {
           </div>
           <div>
             <p className="aboutme">
-              I am a passionate QA engineer turned software developer, I enjoy learning new
+              I am a QA engineer turned software developer, I enjoy learning new
               technologies and skills to build seamless bug-free web
               applications.
             </p>
