@@ -1,25 +1,25 @@
-"use strict";
+const navSlide = () => {
+    const burger = document.querySelector('.nav-icon');
+    // const main = document.querySelector('#home');
+    const nav = document.querySelector(".links");
+    const navLinks = document.querySelectorAll('.links a');
 
 
-const e = React.createElement;
+    burger.addEventListener('click', () => {
+        nav.classList.toggle('nav-active');
+        // main.style.display = "none";
+        navLinks.forEach((link, index) => {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 6}s`
+        });
 
-class LikeButton extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = { liked: false };
-    }
+        burger.classList.toggle('toggle');
 
-    render() {
-        if (this.state.liked) {
-            return 'You liked this.';
-        }
 
-        return e(
-            'button',
-            { onClick: () => this.setState({ liked: true }) },
-            'Like'
-        );
-    }
+    })
+
+  
+
+
 }
-const domContainer = document.getElementById('react-add');
-ReactDOM.render(e(LikeButton), domContainer);
+
+navSlide();

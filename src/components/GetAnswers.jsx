@@ -34,7 +34,7 @@ export default class GetAns extends React.Component{
 
               <div className="content">
                 <div className="text">
-                  <h4>GETANSWERS</h4>
+                  <h6>GETANSWERS</h6>
                   <p>A CLONE OF STACK OVERFLOW</p>
                   <br />
                   <div id="details">

@@ -1,0 +1,109 @@
+.nav-icon div {
+  width: 28px;
+  height: 3px;
+  background-color: rgb(105, 108, 111);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+.nav-icon {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    opacity: 12;
+    top: 10vh;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    /* background-color: red; */
+    align-items: space-around;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    
+  }
+
+  #nav-bar .links a {
+    opacity: 0;
+  }
+  .nav-icon {
+    display: block;
+    cursor: pointer;
+  }
+}
+
+.nav-active{
+  transform: translateX(0%);
+}
+
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform:translateX(50px);
+  }
+  to{
+    opacity: 7;
+    transform: translateX(0px);
+  }
+}
+
+
+.toggle .nav-icon1{
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .nav-icon2{
+  opacity: 0;
+}
+.toggle .nav-icon3{
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+
+
+/* @media (max-width: 768px){
+        #links{
+          display:none;
+        }
+
+        #nav-icon:before,
+        #nav-icon:after, #nav-icon1:before{
+          background-color: white;
+          border-radius: 2px;
+          content:"";
+          display: block;
+          width: 1.7em;
+          height: 2px;
+          margin: 7px 0;
+          transition: all .2s ease-in-out;
+          position: relative;
+          top:0;
+          right:0;
+          cursor: pointer;
+
+        }
+        
+    
+         #nav-icon:active{
+           width:35px;
+           display: block;
+
+         }
+      }
+
+      .expand{
+        
+        box-sizing: border-box;
+        opacity: 0.9;
+        visibility: visible;
+        z-index: 1;
+        width: 90em;
+        height: 40em;
+        background-color: lightpink;
+      } */

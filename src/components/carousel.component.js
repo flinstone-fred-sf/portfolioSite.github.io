@@ -14,7 +14,6 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import RockNRoll from "./RockNRoll";
 
 export default class CarouselComponent extends Component {
-
   render() {
     return (
       <Carousel
@@ -35,7 +34,7 @@ export default class CarouselComponent extends Component {
           </div>
           <div>
             <p className="aboutme">
-              I am a passionate QA engineer turned software developer, I enjoy learning new
+              I am a QA engineer turned software developer, I enjoy learning new
               technologies and skills to build seamless bug-free web
               applications.
             </p>
@@ -69,7 +68,7 @@ export default class CarouselComponent extends Component {
 
               <div className="content">
                 <div className="text">
-                  <h4>INGREDISH</h4>
+                  <h6>INGREDISH</h6>
                   <p>A WEB APPLICATION TO SEARCH FOOD RECIPES</p>
                   <br />
                   <div id="details">
@@ -99,7 +98,7 @@ export default class CarouselComponent extends Component {
 
               <div className="content">
                 <div className="text">
-                  <h4>ROCK-N-ROLL</h4>
+                  <h6>ROCK-N-ROLL</h6>
                   <p>A 3D ANIMATION GAME</p>
                   <br />
                   <div id="details">
